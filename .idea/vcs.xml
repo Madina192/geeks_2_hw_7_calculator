@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/class" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_2_hw_6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_exercises/geek_2_practice_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_exercises/geeks_2_practice_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/geeks_hw_8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/lesson_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_1/lesson_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_2/geeks_2_hw_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_2/geeks_2_hw_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_2/geeks_2_hw_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/geeks_hw_month_2/geeks_2_hw_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/challenge_java_geeks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/challenge_java_task_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/challenge_oop_geeks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/exercises/geks_oop_practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/json_parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/operators" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/loop" vcs="Git" />
+  </component>
+</project>
