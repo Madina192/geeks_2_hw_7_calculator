@@ -3,22 +3,33 @@ package com.example.geeks_2_hw_7;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     private TextView textView;
     private Integer first, second, result;
     private Boolean isOperationClicked;
     private String operation;
+    private Button btn_send;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text_view);
+        btn_send = findViewById(R.id.btn_send);
+
+        findViewById(R.id.btn_send).setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
+            String result_number = textView.getText().toString();
+            intent.putExtra("result_number", result_number);
+            startActivity(intent);
+        });
     }
 
     public void onNumberClick(View view) {
@@ -48,11 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 setNumber("0");
             }
             isOperationClicked = false;
+            btn_send.setVisibility(View.GONE);
         }
+
 
     public void onOperationClick(View view) {
         if(view.getId() == R.id.btn_plus) {
             first = Integer.valueOf(textView.getText().toString());
+            btn_send.setVisibility(View.INVISIBLE);
             operation = "+";
         } else if (view.getId() == R.id.btn_minus) {
             first = Integer.valueOf(textView.getText().toString());
@@ -63,24 +77,29 @@ public class MainActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.btn_division) {
             first = Integer.valueOf(textView.getText().toString());
             operation = "/";
-        } else if(view.getId() == R.id.btn_equal) {
-            second = Integer.valueOf(textView.getText().toString());
-            switch (operation) {
-                case "+":
-                    result = first + second;
-                    break;
-                case "-":
-                    result = first - second;
-                    break;
-                case "*":
-                    result = first * second;
-                    break;
-                case "/":
-                    result = first / second;
-                    break;
-            }
-            textView.setText(result.toString());
         }
+        isOperationClicked = true;
+        btn_send.setVisibility(View.GONE);
+    }
+
+    public void onEqualClick(View view){
+        second = Integer.valueOf(textView.getText().toString());
+        switch (operation) {
+            case "+":
+                result = first + second;
+                break;
+            case "-":
+                result = first - second;
+                break;
+            case "*":
+                result = first * second;
+                break;
+            case "/":
+                result = first / second;
+                break;
+        }
+        textView.setText(result.toString());
+        btn_send.setVisibility(View.VISIBLE);
         isOperationClicked = true;
     }
 
@@ -91,4 +110,6 @@ public class MainActivity extends AppCompatActivity {
             textView.append(number);
         }
     }
+
+
 }
