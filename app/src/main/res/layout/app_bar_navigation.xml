@@ -28,24 +28,22 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="80dp"
         android:background="@color/charcoal"
-        app:layout_anchor="@+id/toolbar"
-        app:layout_anchorGravity="bottom|center"
         app:popupTheme="@style/Theme.Geeks_2_hw_7.PopupOverlay">
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="190dp"
-            android:src="@drawable/img_logo"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/img_corners"
             app:tint="@color/pink" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="100dp"
             android:src="@drawable/ic_search"
-            app:tint="@color/white" />
+            app:tint="@color/white"/>
     </androidx.appcompat.widget.Toolbar>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
